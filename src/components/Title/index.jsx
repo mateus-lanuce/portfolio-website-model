@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { Container } from './styles';
+import { Container, TitleContent } from './styles';
 
-const Title = ({ children }) => {
+const Title = ({ value, sideLeft = false }) => {
   return (
-    <Container>
-      <h1>Title</h1>
+    <Container sideLeft={sideLeft}>
+      <TitleContent>{ value }</TitleContent>
     </Container>
   );
 };
